@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Personal Portfolio</title>
+
+    <!-- style -->
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo1-01.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Engineer & Graphic Design</p>
+                    <h1>Hi, I'm Michael Odida</h1>
+                </div>
+            </div>
+        </div>
+
+            <!-- about me -->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user1-01.png">
+                    </div>
+
+                    <div class="about-col-2">
+
+                        <h1 class="sub-title">About Me</h1>
+
+                        <p>I am industrious motivated, and highly productive employee over recent years I have developed a 
+                            diverse set of skills and qualities. Which I believe will add value to your team in this role. I am strong 
+                            communicator. A supportive collaborator, and my problem-solving capabilities mean I will always take 
+                            ownership of difficult challenges whenever they occur.
+                            I am ready to take up this position with your company, and I see it as an opportunity for me to work 
+                            alongside other talented and like-minded professionals who all wanted to achieve great things for their 
+                            employer. </p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experiences')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tabs" id="skills">
+                                    <ul>
+                                        <li><span>Software Engineer</span><br>Designing web/App interfaces</li>
+                                        <li><span>Graphic Design</span><br> Created Calenders for organization <br> logos, <br> business cards, <br> and many more</li>
+                                        <li><span>IT Speciliaties</span><br>Computer Networing, <br> Maintenance,  <br>installing software e.g. windows, antivirus</li>
+                                    </ul>
+                            </div>
+                            <div class="tab-contents" id="experiences">
+                                <ul>
+                                    <li><span>2020 - 2022</span></li>
+                                    <li><span>Software Engineer</span><br>At German Doctors Nairobi</li>
+                                    <li><span>Web development</span><br> Web app development e.g www.germandoctorsnairobi.co.ke</li>
+                                    <li><span>Asset Management system</span><br>Develop using laravel</li>
+                                    <li><span>ERP System</span><br>Develop using laravel</li>
+                                    <li><span>Graphic Design</span><br>Calenders,<br> Business Cards, <br> posters,<br>  logos etc.</li>
+                                     <!-- at school -->
+                                    <li><span>2019</span></li>
+                                    <li><span>App development</span><br>Building Android/ios apps e.g. 
+                                        time managing tool to remind patient time to take medicine
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>Degree at Strathmore University</li>
+                                <li><span>2015</span><br> KCSE at Sihay Secondary School</li>
+                                
+                            </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------Services---------------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Software Engineer</h2>
+                        <p>Software engineers design and create 
+                            computer systems and applications to 
+                            solve real-world problems. Software engineers, 
+                            sometimes called software developers, 
+                            create software for computers and applications</p>
+                        <a href="#">Learn more</a>
+                    </div>
+    
+                    <div>
+                        <i class="fas fa-crop-alt"></i>
+                        <h2>Graphic Design</h2>
+                        <p>A Graphic Designer is an artist who 
+                            creates visual text and imagery.
+                            They design creative content for 
+                            online campaigns, print ads, websites, 
+                            and even videos</p>
+                        <a href="#">Learn more</a>
+                    </div>
+    
+                    <div>
+                        <i class="fab fa-app-store"></i>
+                        <h2>IT Speciliaties</h2>
+                        <p>Information technology (IT) is a broad
+                             professional category covering functions
+                              including building communications networks,
+                             safeguarding data and information, and
+                              troubleshooting computer problems.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------- portfolio----------------------------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-11-01.png">
+                        <div class="layer">
+                            <h3>IT Speciliaties</h3>
+                            <p>Computer Networing.</p>
+                            <p>Database administrator.</p>
+                            <p>Web development</p>
+                            <p>Business Intelligence</p>
+                            <p>problem Solving</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-12.png">
+                        <div class="layer">
+                            <h3>Pharmacy system</h3>
+                            <p>I developed system that enable the user to manage the stock and to know the remainging product after the sale.
+                                Develop using the php laravel framework and it is available for use.</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Maxi-01.png">
+                        <div class="layer">
+                            <h3>Graphic Designing</h3>
+                            <p>I created for my client e-business poster to market his work, and also even the logo.
+                                For more work just contact me.</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+<!-- ------------------------------- contact ----------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> mikeodida@gmail.com </p>
+                <p><i class="fas fa-phone-square-alt"></i> 0706823376 </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.docx.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="#">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<div class="copyright">
+    <p>Copyright @ Odida.</p>
+</div>
+</div>
+
+
+        <!-- ------------------------------- script----------------------------------- -->
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+<script>
+    var sidemenu1 = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu1.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu1.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
