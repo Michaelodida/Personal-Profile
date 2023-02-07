@@ -5,11 +5,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Personal Portfolio</title>
+    
+    <title> Portfolio || </title>
 
     <!-- style -->
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="header">
@@ -230,12 +233,13 @@
                 <a href="images/CV.docx.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form action="#">
+                <form action="#" name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -273,6 +277,25 @@ function opentab(tabname){
         sidemenu1.style.right = "-200px";
     }
 </script>
+<!-- ----------------------contact form -------------------- -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbztMlZfPfDb5-jUFERwt9bI0m9SvIkyaTpBm4l1LwVls-9LcKBqQv_CnmSjMkXMLnxPxA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
 </html>`
